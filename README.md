@@ -1,5 +1,8 @@
+## GLMs R script
 The R script "GLMs_airsamples.R" contains the code used to generate the GLM results presented in the manuscript "Landscape-scale exposure to multiazole-resistant Aspergillus fumigatus bioaerosols".
 
+------------
+## Air sample metadata
 The .csv files "XXXX_UKonly_landcover1-21_tasmax" contain the metadata analysed in the GLMs, related to the citizen science samples collected, where XXXX refers to sampling round (SS18 = summer 2018, AE18 = autumn 2018, WS18 = winter 2018, SA19 = spring 2019).
 
 Due to GDPR rules regarding sharing personal data, postcodes have been removed from these files and longitude and latitude coordinates have been rounded to 2 decimal places. This gives the location that each air sample was collected from correct to the nearest 1km, without giving away the exact location of the citizen scientist's home or workplace.
@@ -20,6 +23,14 @@ SAMPLE_1_e = landcover classifications 1-21 calculated using air sample latitude
 urban_rura = landcover classifications categorised as rural (1-19) or urban (20 or 21).
 tasmax = maximum daily temperature according to Met Office HadUK-Grid dataset (https://www.metoffice.gov.uk/research/climate/maps-and-data/data/haduk-grid/datasets) at air sampling location on date sample was collected.
 
+-------------------------
+## UK postcodes
 All in-use UK postcodes, at the time analysis was carried out, were downloaded from https://www.doogal.co.uk/PostcodeDownloads.php.
 
+-------------------------
+## UK composter locations
 The locations of active composters with open windrow or outdoor activity, at the time analysis was carried out, were downloaded from SEPA (https://www.sepa.org.uk/data-visualisation/waste-sites-and-capacity-tool/), Natural Resources Wales (http://lle.gov.wales/catalogue/item/EnvironmentalPermittingRegulationsWasteSites/?lang=en) and Northern Ireland Environment Agency (https://public-registers.daera-ni.gov.uk/waste-licenses). Composter locations within England were provided by PHE directly and can be made available on request with the agreement of PHE.
+
+-------------------------
+## Percentage arable cover
+"GB_uniqpc_2kmbuffer_arable.csv" and "NI_uniqpc_2kmbuffer_arable.csv" contain the percentage arable cover in the 2km surrounding each air sampling location. Postcode has been removed for GDPR reasons so these would need to be matched to the air sample metadata using latitude and longitude coordinates. arab_perc (GB) and ni-lcm-2_1 (NI) are the columns with percentage arable cover.
